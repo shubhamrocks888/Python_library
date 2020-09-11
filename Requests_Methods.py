@@ -17,11 +17,37 @@ request(method, url, args)	Sends a request of the specified method to the specif
 
 
 
-#Example
-Make a request to a web page, and print the response text:
+#Parameter Values of Requests
 
-import requests
+'Parameter'		    'Description'
+url		        Required. The url of the request
 
-x = requests.get('https://w3schools.com/python/demopage.htm')
+params		        Optional. A dictionary, list of tuples or bytes to send as a query string.
+                        Default None
 
-print(x.text)
+allow_redirects		Optional. A Boolean to enable/disable redirection.
+                        Default True (allowing redirects)
+
+auth		        Optional. A tuple to enable a certain HTTP authentication.
+                        Default None
+
+cert		        Optional. A String or Tuple specifying a cert file or key.
+                        Default None
+
+cookies		        Optional. A dictionary of cookies to send to the specified url.
+                        Default None
+
+headers		        Optional. A dictionary of HTTP headers to send to the specified url.
+                        Default None
+
+proxies		        Optional. A dictionary of the protocol to the proxy url.
+                        Default None
+
+stream		        Optional. A Boolean indication if the response should be immediately downloaded (False) or streamed (True).
+                        Default False
+
+timeout		        Optional. A number, or a tuple, indicating how many seconds to wait for the client to make a connection and/or send a response.
+                        Default None which means the request will continue until the connection is closed
+
+verify	                Optional. A Boolean or a String indication to verify the servers TLS certificate or not.
+                        Default True
