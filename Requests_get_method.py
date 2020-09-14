@@ -1,5 +1,14 @@
                     ##GET REQUEST
 
+->  GET method is used to retrieve information from the given server using a given URI.
+->  The GET method sends the encoded user information appended to the page request.
+->  The page and the encoded information are separated by the ‘?’ character.
+
+    For example:
+    https://www.google.com/search?q=hello
+
+
+
 'Definition and Usage'
 The get() method sends a GET request to the specified url.
 
