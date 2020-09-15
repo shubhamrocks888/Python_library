@@ -25,7 +25,7 @@ raise_for_status()		If an error occur, this method returns a HTTPError object
 reason		                Returns a text corresponding to the status code
 request		                Returns the request object that requested this response
 status_code		        Returns a number that indicates the status (200 is OK, 404 is Not Found)
-text		                Returns the content of the response, in unicode
+text		                Returns the content of the response, in unicode(string)
 url		                Returns the URL of the response
 
 
